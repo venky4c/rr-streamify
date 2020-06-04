@@ -1,0 +1,20 @@
+body {
+    display: grid;    
+    /* grid-template-rows: auto; */
+}
+
+
+
+.home {
+    background-color: rgb(177, 173, 173);
+    
+}
+
+/* .movies {
+    background-color: rgb(56, 91, 250);
+}
+
+.series {
+    background-color: bisque;
+} */
+

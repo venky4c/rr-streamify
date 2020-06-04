@@ -1,0 +1,36 @@
+.footer {
+    color: white;
+    background-color: black;  
+    display: grid;
+    grid-template-rows: 30% 10% 60%;  
+}
+
+.links {
+    
+}
+
+.copyright{
+    border: 1px solid white;
+}
+
+.social {
+    display: grid;
+    grid-template-areas: "" "icons" "" "" "" "apple" "google" "ms" "";
+    border: 1px solid saddlebrown;
+}
+
+.icons {
+    align-items: center;
+}
+
+.apple {
+
+}
+
+.google {
+
+}
+
+.ms {
+
+}
