@@ -7,21 +7,22 @@ const Footer = () => {
         <div className='footer'>
             <div className='links'>
                 <nav>
-                    <Link to='..pages/home'>Home</Link> | Link2 | Link3 | Link4 | Link5 | Link6
+                    <Link className='a' to='./home'>Home
+                    </Link> | Terms & Conditions | Privacy Policy | Collection Statement | Help | Manage Account
                 </nav>
             </div>
             <div className='copyright'>
-                <p>Copyright © 2020 DEMO Streaming. All rights reserved. </p>
+                <p>Copyright © 2016 DEMO Streaming. All Rights Reserved. </p>
             </div>
-            <div className='social'>
-            {/* <span className='icons'><i class="fa fa-facebook-square"></i>
+            <div id='social'>
+             <span className='icons'><i class="fa fa-facebook-square"></i>
                 <i class="fa fa-twitter-square"></i>
             
                
-               <i class="fa fa-instagram"></i></span> */}
+               <i class="fa fa-instagram"></i></span> 
             </div>
 
-            <div className='stores'>
+            <div id='stores'>
                 <div className='apple'>Apple</div>
                 <div className='google'>Google</div>
                 <div className='ms'>Microsoft</div>

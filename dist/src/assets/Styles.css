@@ -33,21 +33,81 @@ li {
     border: 1px solid white;
 }
 
-.social {
-    display: flex;            
+.links {
+    margin: 20px 0 5px 50px;
 }
 
-.series > card {
+#social {    
+    justify-content: left;
+    display: flex;    
+    width: fit-content;        
+}
+
+#stores {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+}
+
+/* .series--card {
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+    margin-bottom: 2rem;
+    background-color: burlywood;
+} */
+
+.series--card {
     padding: 10px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-auto-rows: 100px;
     grid-auto-flow: dense;
+} 
+
+.home--div {
+    display: flex;
+    justify-content: center;
+}
+
+.home--series {
+    height: 150px;
+    width: 100px;
+}
+.series--div-image, .movies-div-image {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 4px;    
+}
+.series--title {
+    height: 35px;
+    width: 100px;
 }
 
 
-/* header styling
+.series--image, .movies--image {  
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */  /* 
+    width: 100%;
+    height: auto;    */
+    border: 2px dashed black;
+}
+
+.home--movies {
+    height: 100px;
+    width: 100px;
+}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+
+
 #title {
     color: white; 
     grid-column: 2 / 9;
@@ -60,17 +120,19 @@ li {
     grid-template-rows: 60% 40%;
     background-color: #2b7bfb;    
 }
+
  #right-menu {
     display: flex;
     grid-row: 1 / 2;
     grid-column: 11 / -1;
     white-space: nowrap;
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 #button1 {    
     background-color: #2b7bfb;
-    border: none;      
+    border: none;          
 }
 
 #button2 {    
@@ -79,7 +141,7 @@ li {
     color: white;
     border: none;
     padding: 0 25px 0 25px;
-    margin: 0 0 0 10px;
+    margin: 0 5px 0 10px;
 }
 .dynamic {    
     display: flex;    
@@ -87,7 +149,6 @@ li {
     grid-column: 2/ -1;
     grid-row: 2 / 3;
     background-color: #38393b;
-    color: white; 
-    
+    color: white;     
 }
- */
+ 

@@ -4,7 +4,6 @@ import React, { useState, useEffect, useCallback} from 'react'
 const Series = () => {
     const [data, setData] = useState([])
     
-
     const fetchMyAPI = useCallback(async (howMany) => {
     let imageUrl=''    
     const url = 'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json'
@@ -12,10 +11,10 @@ const Series = () => {
     try {
             response = await fetch(url)
             results = await response.json()              
-            series = results.entries.filter((item,i) => item.releaseYear >= 2010 && item.programType==='series'&& i<22).sort((a, b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)) 
+            series = results.entries.filter((item,i) => item.releaseYear >= 2010 && item.programType==='series'&& i<1).sort((a, b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)) 
             console.log(series)
             imageUrl = series.map(item => item['images']['Poster Art']['url'])
-            console.log(imageUrl)
+            console.log(`imageUrl is >>>>>>>>>> ${imageUrl}`)
     } catch (error) {
        // console.error(error)
     }
@@ -28,11 +27,15 @@ const Series = () => {
     }, [fetchMyAPI]) 
     //console.log(data)
     return (
-        
+        //const url = data.map(item => item['images']['Poster Art']['url'])
         <div className='series'>
-           <div id='card'>
-              <h5>{data.map(item => item.title )}</h5> 
-              <div><img src={data.map(item => item['images']['Poster Art']['url'])}/></div>
+           <div className='series--card'>
+              <h5 className='series--title'>{data.map(item => item.title )}</h5> 
+              <div className='series--div--image'><img className='series--image'
+                    src={data.map(item => item['images']['Poster Art']['url'])} 
+                    onError={(e)=>{e.target.onerror = null; e.target.src="img1.jpg"}}
+                    />
+              </div>
             </div>               
         </div>
     )

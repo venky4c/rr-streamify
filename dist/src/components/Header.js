@@ -17,7 +17,7 @@ const Header = () => {
                 </div>                
             </div>
             <div className='dynamic'>
-            <ul id="navlink">
+            <ul id="navlink" className='a'>
                     <li><NavLink to="/pages/home">Home</NavLink></li> | 
                     <li><NavLink to="/pages/series">Series</NavLink></li> |
                     <li><NavLink to="/pages/movies">Movies</NavLink></li>

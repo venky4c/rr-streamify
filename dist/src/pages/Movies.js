@@ -1,21 +1,44 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState,useEffect,useCallback } from 'react'
 
 const Movies = () => {
-    const [allTitles, setAllTitles] = useState([])
+    const [data, setData] = useState([])
     
-    const url = 'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json'  
-
-    useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setAllTitles(data))
+    const fetchMyAPI = useCallback(async (howMany) => {
+    let imageUrl=''    
+    const url = 'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json'
+    let response, results, series;
+    try {
+            response = await fetch(url)
+            results = await response.json()              
+            series = results.entries.filter((item,i) => item.releaseYear >= 2010 && item.programType==='movie'&& i<1).sort((a, b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)) 
+            console.log(series)
+            imageUrl = series.map(item => item['images']['Poster Art']['url'])
+            console.log(imageUrl)
+    } catch (error) {
+       // console.error(error)
+    }
+    
+    setData(series)
     }, [])
-
+    
+    useEffect( () => {
+        fetchMyAPI()
+    }, [fetchMyAPI]) 
+    //console.log(data)
     return (
+        
         <div className='movies'>
-            <span>{allTitles.entries.title}</span>
+           <div className='movies--card'>
+              <h5 className='movies--title'>{data.map(item => item.title )}</h5> 
+              <div className='movies--div--image'>
+                  <img className='movies--image'
+                    src={data.map(item => item['images']['Poster Art']['url'])} 
+                    onError={(e)=>{e.target.onerror = null; e.target.src="img1.jpg"}}/>
+              </div>
+            </div>               
         </div>
     )
 }
+
 
 export default Movies

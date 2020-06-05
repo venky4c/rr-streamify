@@ -23,24 +23,28 @@ const Home = () => {
       start(2010, 21)
     
     return (
-        <div>
-            <Link to='/movies'>Movies</Link><br/>
-            <Link to='/series'>Series</Link>
-            <Switch>
-                <Route exact path="/series">
-                    <Series/>
-                </Route>                            
-                <Route exact path="/movies">
-                  <Movies/>
-              </Route>
-          </Switch>  
-
-            
+        <div>              
+          <Switch>
+              <div className='home--div'>
+                <div className='home--series'>
+                    <Route exact path="/series">
+                        <Series/>
+                    </Route>
+                    
+                </div>
+                    <Link exact to='./series'>Series</Link>
+                <div className='home--movies'>
+                    <Route exact path="/movies">
+                        <Movies/>
+                    </Route>            
+                    <Link to='./movies'>Movies</Link><br/>
+                </div>
+              </div>                                            
+          </Switch>             
         </div>
     )
 }
 
 export default Home
 
-    {/* <div>data: {JSON.stringify(data)}</div>
-             */}  
+  
