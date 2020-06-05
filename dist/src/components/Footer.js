@@ -1,12 +1,13 @@
 import React from 'react'
-import '../assets/Footer.css'
+import { Link } from 'react-router-dom'
+import Home from '../pages/Home'
 
 const Footer = () => {
     return (
         <div className='footer'>
             <div className='links'>
                 <nav>
-                    Link1 | Link2 | Link3 | Link4 | Link5 | Link6
+                    <Link to='..pages/home'>Home</Link> | Link2 | Link3 | Link4 | Link5 | Link6
                 </nav>
             </div>
             <div className='copyright'>

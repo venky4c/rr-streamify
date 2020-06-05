@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/Header.css';
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     const link = 'Series'
@@ -17,7 +17,12 @@ const Header = () => {
                 </div>                
             </div>
             <div className='dynamic'>
-            <h3>Popular {link==='Series' ? 'Series' : 'Movies'}</h3>
+            <ul id="navlink">
+                    <li><NavLink to="/pages/home">Home</NavLink></li> | 
+                    <li><NavLink to="/pages/series">Series</NavLink></li> |
+                    <li><NavLink to="/pages/movies">Movies</NavLink></li>
+                </ul>
+            {/* <h3>Popular {link==='Series' ? 'Series' : 'Movies'}</h3> */}
             </div>
         </div>
     )

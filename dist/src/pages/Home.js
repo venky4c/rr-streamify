@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useCallback} from 'react'
-import '../assets/Home.css'
 import {Link,Switch, Route} from 'react-router-dom'
  import Movies from './Movies'
  import Series from './Series'
@@ -25,21 +24,18 @@ const Home = () => {
     
     return (
         <div>
-            <div className='home'>  
-            
-
-             {/* <Link to='/movies'>Movies</Link><br/>
+            <Link to='/movies'>Movies</Link><br/>
             <Link to='/series'>Series</Link>
             <Switch>
                 <Route exact path="/series">
                     <Series/>
                 </Route>                            
                 <Route exact path="/movies">
-                    <Movies/>
-                </Route>
-            </Switch>  */}
+                  <Movies/>
+              </Route>
+          </Switch>  
 
-            </div>
+            
         </div>
     )
 }
