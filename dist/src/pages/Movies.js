@@ -6,19 +6,19 @@ const Movies = () => {
     const fetchMyAPI = useCallback(async (howMany) => {
     let imageUrl=''    
     const url = 'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json'
-    let response, results, series;
+    let response, results, movies;
     try {
             response = await fetch(url)
             results = await response.json()              
-            series = results.entries.filter((item,i) => item.releaseYear >= 2010 && item.programType==='movie'&& i<1).sort((a, b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)) 
-            console.log(series)
-            imageUrl = series.map(item => item['images']['Poster Art']['url'])
+            movies = results.entries.filter((item,i) => item.releaseYear >= 2010 && item.programType==='movie'&& i<1).sort((a, b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)) 
+            console.log(movies)
+            imageUrl = movies.map(item => item['images']['Poster Art']['url'])
             console.log(imageUrl)
     } catch (error) {
        // console.error(error)
     }
     
-    setData(series)
+    setData(movies)
     }, [])
     
     useEffect( () => {
@@ -33,7 +33,7 @@ const Movies = () => {
               <div className='movies--div--image'>
                   <img className='movies--image'
                     src={data.map(item => item['images']['Poster Art']['url'])} 
-                    onError={(e)=>{e.target.onerror = null; e.target.src="img1.jpg"}}/>
+                    onError={(e)=>{e.target.onerror = null; e.target.src=require('../assets/na.png')}}/>
               </div>
             </div>               
         </div>

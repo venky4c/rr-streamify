@@ -1,0 +1,35 @@
+.wrapper {    
+    /* background-color: green; */
+    display: grid;
+    height: 100vh; 
+    width: 100wh;    
+    grid-template-columns: auto;
+    grid-template-rows:  25% 50% 25% ;
+    
+}
+
+.header {    
+    background-color: #2b7bfb;    
+}
+
+
+.content {    
+    background-color: antiquewhite;
+    grid-row: 2 / 4;
+}
+
+
+.footer {
+    display: flex;      
+    color: white;
+    background-color: rgba(0,0,0,0.7);        
+}
+
+.header, .footer {
+    grid-column: 1 / -1;
+    /* needed for the floated layout 
+    clear: both;*/
+  }
+
+
+ 

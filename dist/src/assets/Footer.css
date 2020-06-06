@@ -1,0 +1,28 @@
+li {
+    display: inline;
+  }
+.copyright{
+    border: 1px solid white;
+}
+
+.links {
+    margin: 20px 0 5px 50px;
+}
+
+#social {    
+    justify-content: left;
+    display: flex;    
+    width: fit-content;        
+}
+
+#stores {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }

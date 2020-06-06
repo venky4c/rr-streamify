@@ -9,7 +9,7 @@ import Movies from './pages/Movies'
 const Main = () => {
         return (
           <Router>
-            <div>
+            <div className='wrapper'>
                  <div className='header'><Header /></div>
                 {/*<div className="content"><Home /></div>   */}
                 {/* <ul id="navlink">

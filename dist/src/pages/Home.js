@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from 'react'
+import React  from 'react'
 import {Link,Switch, Route} from 'react-router-dom'
  import Movies from './Movies'
  import Series from './Series'
