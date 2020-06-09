@@ -1,5 +1,5 @@
 .homediv { 
-    border: 4px dotted black;   
+    border: 2px dotted black;   
     margin: 50px auto 100px 100px;
     display: grid;
     grid-template-columns: 200px 200px;
@@ -7,13 +7,34 @@
     grid-gap: 20px;
 }
 
-#homediv__image--series, #homediv__image--movies {
+.homediv__series {
     height: 250px;
     width: 200px; 
     align-items: center;
 }
+
+.homediv__movies {
+    height: 250px;
+    width: 200px; 
+    align-items: center;
+}
+
 .homediv__text {
+    height: 30px;
+    width: 200px;
     font-size: 1rem;
     text-indent: 0.7em;
+}
+
+#homediv__image--series {
+    height: 150px;
+    width: 200px; 
+    align-items: center;
+}
+
+#homediv__image--movies {
+    height: 150px;
+    width: 200px; 
+    align-items: center;
 }
 

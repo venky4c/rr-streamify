@@ -2,8 +2,8 @@ import React from 'react'
 import { Route, BrowserRouter as Router} from 'react-router-dom'
 import Header from './components/Header';
 import SubHeader from './components/SubHeader';
-import Home from './pages/Home' 
 import Footer from './components/Footer'
+import Home from './pages/Home' 
 import List from './pages/List';
 
 const Main = () => {
@@ -13,12 +13,12 @@ const Main = () => {
                 <div className='header'>
                     <Header />
                 </div>
-                <div className='header'>
+                <div className='subheader'>
                     <SubHeader />
                 </div>
                 <div className="content">
                     <Route exact path="/pages/home" component={Home}/>
-                    <Route path="/pages/list" component={List}/>
+                    <Route exact path="/pages/list" component={List}/>
                 </div>
                 <div className='footer'>
                     <Footer />
@@ -30,6 +30,14 @@ const Main = () => {
 
 export default Main    
 
+{/* <div class="wrapper">
+  <div class="header">
+    <div class="static"></div>
+    <div class="right-menu"></div>
+  </div>
+  <div class="content"></div>
+  <div class="footer"></div>
+</div> */}
 
 /* const Main = () => {
         return (
