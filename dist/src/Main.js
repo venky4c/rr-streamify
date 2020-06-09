@@ -1,22 +1,47 @@
 import React from 'react'
-import {NavLink, Route, BrowserRouter as Router} from 'react-router-dom'
+import { Route, BrowserRouter as Router} from 'react-router-dom'
 import Header from './components/Header';
+import SubHeader from './components/SubHeader';
 import Home from './pages/Home' 
 import Footer from './components/Footer'
-import Series from './pages/Series'
-import Movies from './pages/Movies'
+import List from './pages/List';
 
 const Main = () => {
+    return (
+          <Router>
+            <div className='wrapper'>
+                <div className='header'>
+                    <Header />
+                </div>
+                <div className='header'>
+                    <SubHeader />
+                </div>
+                <div className="content">
+                    <Route exact path="/pages/home" component={Home}/>
+                    <Route path="/pages/list" component={List}/>
+                </div>
+                <div className='footer'>
+                    <Footer />
+                </div>  
+            </div>
+          </Router>
+    );     
+}
+
+export default Main    
+
+
+/* const Main = () => {
         return (
           <Router>
             <div className='wrapper'>
                  <div className='header'><Header /></div>
-                {/*<div className="content"><Home /></div>   */}
-                {/* <ul id="navlink">
+                 <div className="content"><Home /></div>   
+                 <ul id="navlink">
                     <li><NavLink to="/pages/home">Home</NavLink></li>
                     <li><NavLink to="/pages/series">Series</NavLink></li>
                     <li><NavLink to="/pages/movies">Movies</NavLink></li>
-                </ul> */}
+                </ul> 
                 <div className="content">
                     <Route path="/pages/home" component={Home}/>
                     <Route path="/pages/series" component={Series}/>
@@ -27,9 +52,8 @@ const Main = () => {
                       <Footer />
                 </div>  
             </div>
-
           </Router>
         );     
     }
 
-export default Main    
+export default Main     */

@@ -6,11 +6,10 @@ import './assets/Main.css'
 import './assets/Header.css'
 import './assets/Footer.css'
 import './assets/Home.css'
-import './assets/Series.css'
-import './assets/Movies.css'
+import './assets/ListItem.css'
 
  
 ReactDOM.render(<BrowserRouter>
-  <Main/></BrowserRouter>, 
-  document.getElementById("root")
+      <Main/>
+  </BrowserRouter>, document.getElementById("root")
 );
