@@ -1,25 +1,41 @@
 
-#title {
-    color: white; 
-    grid-column: 2 / 9;
-    grid-row: 1 / 2;
-}
+.header_wrapper {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ; 
+    /* grid-template-areas: "st st"
+                         "d d"; */
+      
+} 
 
 .static {
-     display: grid;    
-     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60% 40%;
-    background-color: #2b7bfb;    
+    grid-area: st;
+    background-color: #2b7bfb;          
 }
 
- #right-menu {
-    display: flex;
-    grid-row: 1 / 2;
-    grid-column: 11 / -1;
-    white-space: nowrap;
-    text-align: center;
-    margin-top: 1.5rem;
+.dynamic { 
+    grid-area: d;
+    border: 1px solid white;     
+    background-color: #38393b;
+    color: white;       
+} 
+
+
+.title {
+    
+    margin: 20px 0 0 100px;  
+    color: white;
+    border: 1px solid red;     
 }
+
+.right-menu {
+    
+    border: 1px solid black;     
+ /*    white-space: nowrap; */
+    text-align: right;    
+}
+
+
 
 #button1 {    
     background-color: #2b7bfb;
@@ -34,11 +50,16 @@
     padding: 0 25px 0 25px;
     margin: 0 5px 0 10px;
 }
-.dynamic {    
-    display: flex;    
-    white-space: nowrap;
-    grid-column: 2/ -1;
-    grid-row: 2 / 3;
-    background-color: #38393b;
-    color: white;     
+
+.a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom:1;
+    display:inline;
+    /* this fix is needed for IE7- */
 }

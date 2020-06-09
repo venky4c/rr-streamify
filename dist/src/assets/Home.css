@@ -1,0 +1,19 @@
+.homediv {    
+    margin: 50px auto 100px 100px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-auto-rows: 250px; 
+    grid-gap: 20px;
+}
+
+#homediv__image--series, #homediv__image--movies {
+    height: 250px;
+    width: 200px; 
+    align-items: center;
+
+}
+.homediv__text {
+    font-size: 1rem;
+    text-indent: 0.7em;
+}
+
