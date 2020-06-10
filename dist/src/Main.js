@@ -13,12 +13,12 @@ const Main = () => {
                 <div className='header'>
                     <Header />
                 </div>
-                <div className='subheader'>
+                <div className='sub-header'>
                     <SubHeader />
                 </div>
                 <div className="content">
                     <Route exact path="/pages/home" component={Home}/>
-                    <Route exact path="/pages/list" component={List}/>
+                    <Route path="/pages/list" component={List}/>
                 </div>
                 <div className='footer'>
                     <Footer />
@@ -30,38 +30,3 @@ const Main = () => {
 
 export default Main    
 
-{/* <div class="wrapper">
-  <div class="header">
-    <div class="static"></div>
-    <div class="right-menu"></div>
-  </div>
-  <div class="content"></div>
-  <div class="footer"></div>
-</div> */}
-
-/* const Main = () => {
-        return (
-          <Router>
-            <div className='wrapper'>
-                 <div className='header'><Header /></div>
-                 <div className="content"><Home /></div>   
-                 <ul id="navlink">
-                    <li><NavLink to="/pages/home">Home</NavLink></li>
-                    <li><NavLink to="/pages/series">Series</NavLink></li>
-                    <li><NavLink to="/pages/movies">Movies</NavLink></li>
-                </ul> 
-                <div className="content">
-                    <Route path="/pages/home" component={Home}/>
-                    <Route path="/pages/series" component={Series}/>
-                    <Route path="/pages/movies" component={Movies}/>
-                </div>
-            
-                <div className='footer'>
-                      <Footer />
-                </div>  
-            </div>
-          </Router>
-        );     
-    }
-
-export default Main     */

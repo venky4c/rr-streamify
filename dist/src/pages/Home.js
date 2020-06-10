@@ -25,7 +25,7 @@ const Home = () => {
                         />
                     </div>
                     <div className='homediv__text'>
-                        <Link exact to='./list?type=movies' 
+                        <Link exact to='./list?type=movie' 
                               style={{ textDecoration: 'none', color: 'inherit' }}>
                                   Popular Movies
                         </Link>

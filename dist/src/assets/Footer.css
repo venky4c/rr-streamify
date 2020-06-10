@@ -1,4 +1,54 @@
 .footer__wrapper {
+  color: white;
+  background-color: #38393b;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.2fr 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "footer__links" "footer__copyright" "footer__social";
+}
+
+.footer__copyright { 
+  grid-area: footer__copyright;
+  font-size: smaller;
+  margin-left: 5rem;
+}
+
+.footer__links { 
+  grid-area: footer__links;
+  margin-left: 5rem;
+}
+
+.footer__social {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "footer__icons footer__stores";
+  grid-area: footer__social;
+}
+
+.footer__icons { 
+  margin-left: 4rem;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr;
+  grid-template-rows: 0.3fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . fa fa-instagram"; 
+  grid-area: footer__icons; 
+}
+
+.footer__stores {
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr;
+  grid-template-rows: 0.3fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . fa fa-microsoft";
+  grid-area: footer__stores;
+}
+
+/* backup
+.footer__wrapper {
     background-color: black;
     display: grid;
     grid-template-columns: 1fr;
@@ -7,7 +57,7 @@
     grid-template-areas: "footer_links" "footer__social";
   }
   
-  .footer_links {
+  .footer__links {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -15,16 +65,7 @@
     grid-template-areas: "footer__links__a" "footer__copyright";
     grid-area: footer_links;
   }
-  
-  .footer__links__a {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1px 1px;
-    grid-template-areas: ". . . . . . . . . .";
-    grid-area: footer__links__a;
-  }
-  
+     
   .footer__copyright {
     display: grid;
     grid-template-columns: 1fr;
@@ -42,16 +83,7 @@
     gap: 1px 1px;
     grid-template-areas: "footer__icons footer_stores";
     grid-area: footer__social;
-  }
-  
-  .footer__icons {    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.45fr;
-    gap: 1px 1px;
-    grid-template-areas: ". . .";
-    grid-area: footer__icons;
-  }
+  }  
   
   .footer_stores {
     border: 3px dashed wheat;   
@@ -63,9 +95,25 @@
     grid-area: footer_stores;
   }
 
+  .footer__icons {    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.45fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . .";
+    grid-area: footer__icons;
+  }
 
+  .footer__links__a {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . . . . . . . . .";
+    grid-area: footer__links__a;
+  }
 
-
+ */
 
 
 

@@ -1,0 +1,27 @@
+.contact-card {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.25rem;
+}
+
+.listdiv {
+    border: 1px dotted red;
+    display: inline-flex;
+    flex-direction: row;
+    width: 200px;
+    height: 100px;
+}
+
+.listdiv > img {
+  border: 1px solid white;
+}
+
+.listdiv > span {
+  display: block;
+  border: 1px solid black;
+  font-size: medium;
+}
+
+
+

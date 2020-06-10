@@ -7,17 +7,17 @@
     grid-gap: 20px;
 }
 
-.homediv__series {
-    height: 250px;
-    width: 200px; 
-    align-items: center;
-}
-
 .homediv__movies {
     height: 250px;
     width: 200px; 
     align-items: center;
 }
+
+.homediv__series {
+    height: 250px;
+    width: 200px; 
+    align-items: center;
+} 
 
 .homediv__text {
     height: 30px;
@@ -26,15 +26,15 @@
     text-indent: 0.7em;
 }
 
-#homediv__image--series {
+#homediv__image--series,#homediv__image--movies {
     height: 150px;
     width: 200px; 
     align-items: center;
 }
 
-#homediv__image--movies {
+/* #homediv__image--movies {
     height: 150px;
     width: 200px; 
     align-items: center;
 }
-
+ */

@@ -1,62 +1,54 @@
 .header__wrapper {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "st lb tb" "d d d";
-    grid-area: header_wrapper;
-    /*grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ; 
-    grid-template-areas: "st st"
-                         "d d"; */      
+    grid-template-rows: 0.4fr;
+    grid-template-areas: "title login trial" ;
 } 
 
-.static {
-    grid-area: st; 
+.title {
     background-color: #2b7bfb;          
+    grid-area: title;
+    margin-top: 0.5em;  
+    margin-left: 5rem;
+    color: white; 
+}
+.login {    
+    grid-area: login;
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 0.5rem;
 }
 
-.sub-header { 
-    grid-area: d; 
-    background-color: #38393b;
-    color: white;       
-} 
+.trial {    
+    grid-area: trial;
+    text-align: left;
+    margin-top: 40px;    
+ }
 
 .login-button { 
-    grid-area: lb;   
     background-color: #2b7bfb;
-    border: none; 
-    color: white;         
+    border-radius: 0.4em;    
+    color: white;     
+    padding: 0.5em;
+    margin: 0.5em 0 0 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
 }
 
 .trial-button {  
-    grid-area: tb;  
     vertical-align: middle;
-    background-color: black;
+    background-color: #38393b;
     color: white;
-    border: none;
-    padding: 0 25px 0 25px;
-    margin: 0 5px 0 10px;
+    border-radius: 0.5em;
+    padding: 0.5em;    
+    margin: 0.5em 1em 0 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.right-menu {    
-    border: 1px solid black;     
-    white-space: nowrap; 
-    justify-content: flex-end;     
-}
-
-.title {    
-    margin-top: 20px;  
-    margin-left: 100px;
-    color: white; 
-}
-
-
-
-
-
-
-
+.sub-header { 
+    display: flex;
+    background-color: #38393b;
+    color: white;       
+} 
 
 .a {
     text-decoration: none;
