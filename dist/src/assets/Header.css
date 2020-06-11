@@ -1,34 +1,34 @@
 .header__wrapper {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-rows: 10rem;
     grid-template-areas: "title login trial" ;
 } 
 
 .title {
     background-color: #2b7bfb;          
     grid-area: title;
-    margin-top: 0.5em;  
-    margin-left: 5rem;
+    margin-top: 0.5rem;  
+    margin-left: 6rem;
     color: white; 
 }
 .login {    
     grid-area: login;
     text-align: right;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     margin-right: 0.5rem;
 }
 
 .trial {    
     grid-area: trial;
     text-align: left;
-    margin-top: 40px;    
+    margin-top: 2.5rem;    
  }
 
 .login-button { 
-    background-color: #2b7bfb;
-    border-radius: 0.4em;    
+    background-color: #2b7bfb; 
+    border-radius: 0.4em;     
     color: white;     
     padding: 0.5em;
     margin: 0.5em 0 0 0;
@@ -37,18 +37,13 @@
 
 .trial-button {  
     vertical-align: middle;
-    background-color: #38393b;
+    background-color: #323436;
     color: white;
-    border-radius: 0.5em;
+    border-radius: 0.5em; 
     padding: 0.5em;    
-    margin: 0.5em 1em 0 2em;
+    margin: 0.5em 0 0 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.sub-header { 
-    display: flex;
-    background-color: #38393b;
-    color: white;       
-} 
 
 .a {
     text-decoration: none;

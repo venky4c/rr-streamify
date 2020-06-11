@@ -8,7 +8,7 @@ const Home = () => {
                 <div className='homediv__series'>
                     <div className='homediv__image'>
                         <img id='homediv__image--series'
-                            src={require('../assets/series.jpg')} alt=''
+                            src={require('../assets/images/series.png')} alt=''
                         />
                     </div>
                     <div className='homediv__text'>
@@ -21,7 +21,7 @@ const Home = () => {
                 <div className='homediv__movies'>
                     <div className='homediv__image'>
                         <img id='homediv__image--movies'
-                            src={require('../assets/movies.jpg')} alt=''
+                            src={require('../assets/images/movies.png')} alt=''
                         />
                     </div>
                     <div className='homediv__text'>

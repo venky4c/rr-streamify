@@ -2,8 +2,8 @@ import React from 'react'
 import { Route, BrowserRouter as Router} from 'react-router-dom'
 import Header from './components/Header';
 import SubHeader from './components/SubHeader';
-import Footer from './components/Footer'
 import Home from './pages/Home' 
+import Footer from './components/Footer'
 import List from './pages/List';
 
 const Main = () => {

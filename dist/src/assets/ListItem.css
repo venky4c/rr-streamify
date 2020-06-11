@@ -6,11 +6,11 @@
 }
 
 .listdiv {
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
     display: inline-flex;
     flex-direction: row;
-    width: 200px;
-    height: 100px;
+    width: 12.5rem;
+    height: 6.25rem;
 }
 
 .listdiv > img {

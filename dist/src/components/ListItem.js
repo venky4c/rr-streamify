@@ -9,8 +9,8 @@ const ListItem = ({data}) => {
         <div className='listdiv'>
             <img className='listdiv__image' src={url} 
                 onError={(e)=>{e.target.onerror = null; e.target.src=require('../assets/na.png')}}
-                alt=''/>
-            <span className='listdiv__title'>Title: {title}</span>            
+                alt=''/><br/>
+            <p className='listdiv__title'>Title: {title}</p>            
         </div>
     )
 }

@@ -21,7 +21,7 @@ const getTitle = (location) => {
 
 const SubHeader = (props) => {
     return (
-        <div className='sub-header'>
+        <div className='subheader__div'>
             {getTitle(props.location)} 
         </div>
     )

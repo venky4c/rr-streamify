@@ -21,13 +21,17 @@ const Footer = () => {
                 </div>
                  
                 <div className='footer__stores'>
-                    <div className='apple'>
-                        <i class="fa fa-apple-alt">App Store</i></div>                
-                    <div className='google'>
-                        <span class="iconify" data-icon="fa-brands:google-play" data-inline="false"></span>               
+                    <div className='apple'
+                            style={{marginBottom:'6.25rem'}}>
+                        <img src={require('../assets/images/app.png')} alt=''/>
+                    </div>                
+                    <div className='google' 
+                            style={{marginBottom:'6.25rem'}}>
+                        <img src={require('../assets/images/google.png')} alt=''/>                        
                     </div>
-                    <div className='ms'>
-                        <i class="fa fa-microsoft">Microsoft</i>
+                    <div className='ms'
+                            style={{marginBottom:'6.25rem'}}>
+                        <img src={require('../assets/images/ms.png')} alt=''/>
                     </div> 
                 </div>                      
             </div>
@@ -36,15 +40,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-{/* <span class="iconify" data-icon="fa-google-play">Google Play</span> */}
-                {/*      <i id="fa fa-google-play">Google Play</i> */}
-/*
-<div class="grid-container">
-  <div class="footer__copyright"></div>
-  <div class="footer__links"></div>
-  <div class="footer__social">
-    <div class="footer__icons"></div>
-    <div class="footer__stores"></div>
-  </div>
-</div> */
