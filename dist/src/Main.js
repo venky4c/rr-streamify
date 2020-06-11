@@ -13,7 +13,7 @@ const Main = () => {
                 <div className='header'>
                     <Header />
                 </div>
-                <div className='sub-header'>
+                <div className='subheader'>
                     <SubHeader />
                 </div>
                 <div className="content">

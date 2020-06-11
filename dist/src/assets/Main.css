@@ -2,28 +2,38 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3rem, 3rem, auto, 5rem;
+    grid-template-rows: 3rem, 3rem, auto, 3rem;
     /* grid-auto-rows: minmax(150px, auto);     */
-    grid-template-areas: "header" "sub-header" "content" "footer";
+    grid-template-areas: "header subheader content footer";
 } 
 
-.header { grid-area: header; 
+.header { 
+    display: grid;
+    grid-area: header; 
     background-color: #2b7bfb;
 } 
 
-.sub-header { 
+.subheader { 
     display: grid;
-    grid-area: sub-header; 
+    height: 3rem;
+    grid-area: subheader; 
     background-color: #38393b;
-    color: white;       
+    font-size: large;
+    color: white;   
+    padding-left: 7rem;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
 }
 
 .content { 
+    display: grid;
     grid-area: content; 
-    border: 2px dashed black;    
+    border: 1px solid lightgray;    
+    /* justify-content: center; */
 }
   
 .footer { 
+    display: grid;
+    height: 5rem;
     grid-area: footer; 
     color: white;
     background-color: #38393b;
