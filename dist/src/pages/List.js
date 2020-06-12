@@ -15,6 +15,8 @@ const getData = async (aboveYear, howMany, type) => {
             .filter((item) => item.releaseYear >= aboveYear && item.programType === type)
             .sort((a, b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0)) 
         console.assert(programs.length > 0, `Error: ... Array length is zero`)
+        console.table(programs, ['title', 'releaseYear'])
+        //console.clear()
         /* For some reason, the line of code that works for series is not working for movies
         programs = results.entries
         .filter((item, i) => item.releaseYear >= aboveYear && item.programType === type && i>=howMany)
@@ -31,7 +33,7 @@ const List = (props) => {
     const [isLoading, setIsLoading] = useState(false)
     const [data, setData] = useState([])
     const fetchMyAPI = useCallback(getData, [ type ])
-    
+
     useEffect(() => {
         const pullData = async () => {
         const list = await fetchMyAPI(2010, 21, type)
@@ -44,7 +46,7 @@ const List = (props) => {
     return (
         <div className="contact-card">
         {   
-            setIsLoading === false ? <h3>Loading...</h3> :  data.map((program, index) => <ListItem key={index} data={program}></ListItem>)
+            isLoading === false ? <h3>Loading...</h3> :  data.map((program, index) => <ListItem key={index} data={program}></ListItem>)
         }
         </div>
     )

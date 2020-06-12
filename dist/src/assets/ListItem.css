@@ -1,27 +1,32 @@
 .contact-card {
-  max-width: 90%;
+  max-width: 85%; 
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(7rem, 1fr));
+  margin-top: 2.5rem;
   grid-gap: 0.35rem;
-  justify-content: center;
-}
+  padding-left: 7rem;
+  }
 
 .listdiv {
-    border: 1px solid lightgray;
-    display: inline-flex;
-    flex-direction: row;
-    width: 12.5rem;
-    height: 6.25rem;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 8rem;
+  height: 15rem;    
 }
 
 .listdiv > img {
-  border: 1px solid white;
+  padding:3px;
+  border:1px solid #323436;
+  background-color:#2b7bfb;  
 }
 
 .listdiv > p {
   display: block;
-  /* border: 1px solid black; */
-  font-size: medium;
+  font-size: small;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 

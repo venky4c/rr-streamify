@@ -1,50 +1,54 @@
 .footer__wrapper {
-  color: white;
-  background-color: #323436;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.2fr 0.4fr;
-  gap: 1px 1px;
-  grid-template-areas: "footer__links" "footer__copyright" "footer__social";
+    color: white;
+    background-color: #323436;
+    display: grid;
+    grid-template-columns: 10rem; 
+    grid-template-rows: 3ch auto minmax(40px, 100px);
+    grid-template-areas:  "footer__links footer__links"
+                        "footer__copyright footer__copyright" 
+                        "footer__social footer__social";
 }
 
 .footer__copyright { 
-  grid-area: footer__copyright;
-  font-size: smaller;
-  margin-left: 5rem;
-  margin-bottom: 2rem;
+    grid-area: footer__copyright;
+    font-size: smaller;
+    margin-left: 7rem;
+    display: grid;
+    align-items: star;
 }
 
 .footer__links { 
-  grid-area: footer__links;
-  margin-left: 5rem;
+    display: grid;
+    align-items: center;
+    grid-area: footer__links;
+    margin-left: 7rem;
 }
 
 .footer__social {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  grid-template-rows: 0.6fr;
-  gap: 1px 1px;
-  grid-template-areas: "footer__icons footer__stores";
-  grid-area: footer__social;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.6fr;
+    gap: 1px 1px;
+    grid-template-areas: "footer__icons footer__stores";
+    grid-area: footer__social;
 }
 
 .footer__icons { 
-  margin-left: 4rem;
-  display: grid;
-  grid-template-columns: 0.1fr 0.1fr 0.1fr;
-  grid-template-rows: 0.3fr;
-  gap: 1px 1px;
-  grid-template-areas: ". . fa fa-instagram"; 
-  grid-area: footer__icons; 
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.3fr;
+    gap: 1px 1px;
+    grid-area: footer__icons; 
+    margin-top: 1rem;
 }
 
 .footer__stores {
-  display: grid;
-  grid-template-columns: 150px, 150px, 150px;
-  grid-template-rows: 0.03fr;
-  grid-template-areas: "apple google ms";
-  grid-area: footer__stores;
+    display: grid;
+    grid-template-columns: 150px, 150px, 150px;
+    grid-template-rows: 0.03fr;
+    grid-template-areas: "apple google ms";
+    grid-area: footer__stores;
 }
 
 .apple{
@@ -52,138 +56,3 @@
   width: 150px;
   height: 50px;
 }
-/* backup
-.footer__wrapper {
-    background-color: black;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.7fr;
-    gap: 6px 0px;
-    grid-template-areas: "footer_links" "footer__social";
-  }
-  
-  .footer__links {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "footer__links__a" "footer__copyright";
-    grid-area: footer_links;
-  }
-     
-  .footer__copyright {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr;
-    gap: 1px 1px;
-    grid-template-areas: ".";
-    grid-area: footer__copyright;
-  }
-  
-  .footer__social {
-    border: 1px solid red;  
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "footer__icons footer_stores";
-    grid-area: footer__social;
-  }  
-  
-  .footer_stores {
-    border: 3px dashed wheat;   
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.45fr;
-    gap: 1px 1px;
-    grid-template-areas: ". . .";
-    grid-area: footer_stores;
-  }
-
-  .footer__icons {    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.45fr;
-    gap: 1px 1px;
-    grid-template-areas: ". . .";
-    grid-area: footer__icons;
-  }
-
-  .footer__links__a {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1px 1px;
-    grid-template-areas: ". . . . . . . . . .";
-    grid-area: footer__links__a;
-  }
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  .footer__wrapper {
-    background-color: black; 
-    display: grid;  
-    border: 2px solid greenyellow;  
-    grid-template-areas: "L L"
-                         "f a"   ; 
-    
-}  
- .footer__links {
-    border: 2px solid blue;
-    grid-area: L;    
-} 
-
- .footer__social {  
-    grid-area: f;
-    border: 2px dotted goldenrod;      
-}
- 
-.footer__stores {
-    grid-area: a;
-    background-color: lightgrey;   
-    grid-template-columns: auto auto auto;
-    justify-content: center; 
-    text-align: right;
-    
-}
-
-.footer__stores > i, .footer__stores > span {
-    justify-items: center;
-    border: 1px dashed white;
-    height: 40px;
-    width: 150px;        
-}
-
-.copyright{
-    font-size: x-small;
-    border: 1px solid white;
-}
-.footer__wrapper__a, .footer__wrapper__a:visited, .footer__wrapper__a:hover, .footer__wrapper__a:active {
-    color: inherit;
-    text-decoration: none;
-}
- */

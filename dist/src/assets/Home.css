@@ -1,16 +1,16 @@
 .homediv { 
-    border: 2px dotted black;   
     margin: 3rem auto 6rem 6rem;
     display: grid;
     grid-template-columns: 10rem 10rem;
     grid-auto-rows: 12.5rem; 
     grid-gap: 1rem;
+    justify-content: left;
 }
 
 .homediv__movies, .homediv__series {
     height: 12.5rem;
     width: 9rem; 
-    align-items: center;
+    justify-items: center;
 }
 
 .homediv__text {

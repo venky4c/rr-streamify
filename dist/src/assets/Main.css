@@ -1,22 +1,18 @@
 .grid-container {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3rem, 3rem, auto, 3rem;
-    /* grid-auto-rows: minmax(150px, auto);     */
+    grid-auto-rows: minmax(5rem, auto);    
     grid-template-areas: "header subheader content footer";
 } 
 
 .header { 
-    display: grid;
-    grid-area: header; 
+    display: grid; 
     background-color: #2b7bfb;
 } 
 
 .subheader { 
     display: grid;
-    height: 3rem;
-    grid-area: subheader; 
+    height: 6rem;
     background-color: #38393b;
     font-size: large;
     color: white;   
@@ -26,14 +22,11 @@
 
 .content { 
     display: grid;
-    grid-area: content; 
-    border: 1px solid lightgray;    
-    /* justify-content: center; */
+    border: 1px solid lightgray;        
 }
   
-.footer { 
+.footer {     
     display: grid;
-    height: 5rem;
     grid-area: footer; 
     color: white;
     background-color: #38393b;

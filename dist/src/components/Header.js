@@ -7,13 +7,11 @@ const Header = () => {
                 <h1>
                     DEMO Streaming
                 </h1>
-            </div>    
+            </div>
             <div className='login'>
                 <button className='login-button'>Log in</button>
-            </div>
-            <div className='trial'>    
                 <button className='trial-button'>Start your free trial</button>
-            </div>                            
+            </div>
         </div>
     )
 }
