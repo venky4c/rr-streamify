@@ -5,8 +5,8 @@ This project is implemented using React. This SPA (Single Page Application) has 
 Home, Series & Movies. From the Home page the user can click on either Popular Series or Popular Movies link, to navigate to the respective pages. The data is fetched from a JSON web url.
 
 Setup instructions:
-1. Upon page launch the url reads: http://localhost:3000/home but it should ideally be http://localhost:3000/pages/home.
-Please change it to this: http://localhost:3000/pages/home so at access the Home page, and from there Series and Movies links are under the images viz. Popular Movies, Popular Series
+1. Upon page launch the url reads: http://localhost:3000/ but it should ideally be http://localhost:3000/pages/home.
+Please change it to this: http://localhost:3000/pages/home so that we can access the Home page, and from there Series and Movies links are under the images viz. Popular Movies, Popular Series
 I am really sorry for this, as I could not resolve it at the last minute due to paucity of time.
 
 How did you decide on the technical and architectural choices used as part of your solution?
