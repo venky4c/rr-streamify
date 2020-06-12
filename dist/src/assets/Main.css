@@ -12,6 +12,7 @@
 
 .subheader { 
     display: grid;
+    align-items: center;
     height: 6rem;
     background-color: #38393b;
     font-size: large;
