@@ -8,25 +8,28 @@ import List from './pages/List';
 
 const Main = () => {
     return (
-          <Router>
-            <div className='wrapper'>
-                <div className='header'>
-                    <Header />
-                </div>
-                <div className='subheader'>
-                    <SubHeader />
-                </div>
-                <div className="content">
-                    <Route exact path="/pages/home" component={Home}/>
-                    <Route path="/pages/list" component={List}/>
-                </div>
-                <div className='footer'>
-                    <Footer />
-                </div>  
-            </div>
-          </Router>
-    );     
+      <Router>
+                
+        <div className="wrapper">
+          <div className="header">
+            <Header />
+          </div>
+          <div className="subheader">
+            <SubHeader />
+          </div>
+          <div className="content">
+            <Route exact path="/pages/home" component={Home} />
+            <Route path="/pages/list" component={List} />
+          </div>                  
+          <div className="footer">                    
+            <Footer />
+          </div>
+        </div>
+              
+      </Router>
+    );     
 }
 
-export default Main    
+export default Main   
+ 
 

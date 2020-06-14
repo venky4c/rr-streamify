@@ -14,10 +14,10 @@ const Footer = () => {
             </div> 
                         
             <div className='footer__social'>
-                <div className='footer__icons'>
-                    <i class="fa fa-facebook-square" style={{textAlign: 'right'}}></i>
-                    <i class="fa fa-twitter-square" style={{textAlign: 'center'}}></i>                           
-                    <i class="fa fa-instagram"></i>
+                <div className='footer__icons'>         
+                    <i class="fab fa-facebook-square fa-2x" style={{textAlign: 'right'}}></i>
+                    <i class="fab fa-twitter-square fa-2x" style={{textAlign: 'center'}}></i>                           
+                    <i class="fab fa-instagram fa-2x"></i>
                 </div>
                  
                 <div className='footer__stores'>

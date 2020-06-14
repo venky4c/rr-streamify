@@ -7,26 +7,28 @@ const Home = () => {
             <div className='homediv'>
                 <div className='homediv__series'>
                     <div className='homediv__image'>
+                    <a href="./list?type=series" target="_blank">
                         <img id='homediv__image--series'
                             src={require('../assets/images/series.png')} alt=''
                         />
-                    </div>
+                    </a>
+                </div>
                     <div className='homediv__text'>
-                        <Link exact to='./list?type=series' 
-                              style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <Link className='seriesLink' exact to='./list?type=series'>
                                 Popular Series
                         </Link>
                     </div>
                 </div>
                 <div className='homediv__movies'>
                     <div className='homediv__image'>
-                        <img id='homediv__image--movies'
-                            src={require('../assets/images/movies.png')} alt=''
-                        />
+                        <a href='./list?type=movie' target='_blank'>
+                            <img id='homediv__image--movies'
+                                src={require('../assets/images/movies.png')} alt=''
+                            />
+                        </a>
                     </div>
                     <div className='homediv__text'>
-                        <Link exact to='./list?type=movie' 
-                              style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <Link className='moviesLink' exact to='./list?type=movie'>
                                   Popular Movies
                         </Link>
                     </div>

@@ -46,7 +46,7 @@ const List = (props) => {
     return (
         <div className="contact-card">
         {   
-            isLoading === false ? <h3>Loading...</h3> :  data.map((program, index) => <ListItem key={index} data={program}></ListItem>)
+            isLoading === false ? <h1 className='spinner'>Loading...</h1> :  data.map((program, index) => <ListItem key={index} data={program}></ListItem>)
         }
         </div>
     )

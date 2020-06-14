@@ -1,4 +1,4 @@
-.contact-card {
+/* .contact-card {
   max-width: 85%; 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
@@ -19,8 +19,8 @@
 
 .listdiv > img {
   padding:3px;
-  border:1px solid #323436;
-  background-color:#2b7bfb;  
+  border:1px solid var(--dark);
+  background-color: var(--primary);  
 }
 
 .listdiv > p {
@@ -31,3 +31,4 @@
 
 
 
+ */

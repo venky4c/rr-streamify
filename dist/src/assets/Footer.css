@@ -1,4 +1,4 @@
-.footer__wrapper {
+/* .footer__wrapper {
     color: white;
     background-color: #323436;
     display: grid;
@@ -34,7 +34,7 @@
 }
 
 .footer__icons { 
-    margin-left: 4rem;
+    margin-left: 3.8rem;
     display: grid;
     grid-template-columns: 0.1fr 0.1fr 0.1fr;
     grid-template-rows: 0.3fr;
@@ -56,3 +56,4 @@
   width: 150px;
   height: 50px;
 }
+ */

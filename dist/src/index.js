@@ -5,7 +5,6 @@ import Main from "./Main";
 import './assets/Main.css'
 import './assets/Header.css'
 import './assets/Footer.css'
-import './assets/Home.css'
 import './assets/ListItem.css'
  
 ReactDOM.render(<BrowserRouter>

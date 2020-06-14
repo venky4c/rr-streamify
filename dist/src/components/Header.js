@@ -4,9 +4,9 @@ const Header = () => {
     return (
         <div className='header__wrapper'> 
             <div className='title'>
-                <h1>
+                <span>
                     DEMO Streaming
-                </h1>
+                </span>
             </div>
             <div className='login'>
                 <button className='login-button'>Log in</button>
