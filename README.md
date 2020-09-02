@@ -1,11 +1,11 @@
 # rr-streamify
 A novel OTT platform to show exciting web series and brand new movies.
 
-This project is implemented using React. This SPA (Single Page Application) has 3 Web Responsive pages i.e. 
-Home, Series & Movies. The data is fetched from a JSON web url.
+This project is implemented using React. This SPA has 3 Web Responsive pages i.e. Home, Series & Movies. The data is fetched from external API.
+![Live Link](https://safe-escarpment-90366.herokuapp.com/pages/home)
 
-Setup instructions:
-1. Please click: https://safe-escarpment-90366.herokuapp.com/pages/home 
+![Alt Link](https://github.com/venky4c/rr-streamify/blob/master/dist/src/RRStreamify.gif)
+
 2. You can navigate to Series and Movies pages by clicking on the respective links viz. Popular Movies, Popular Series
 3. For navigating BACK to HOME page, click on the 'Home' link in the footer of the pages.
 
